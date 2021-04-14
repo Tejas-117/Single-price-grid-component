@@ -1,0 +1,131 @@
+:root{
+/* ### Primary */
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+}
+*{
+ margin: 0%;
+ padding: 0%;
+}
+html{
+ font-size: 16px;
+ font-family: 'Karla', sans-serif;
+}
+body{
+ box-sizing: border-box;
+ background-color: var(--LightGray);
+}
+main{
+ margin: 7% 6%;
+ border-radius: 7px;
+ overflow: hidden;
+}
+
+/* mobile-styling */
+section{
+ padding: 5%;
+}
+.msg{
+ background-color: white;
+}
+.msg .heading-one{
+ color: var(--Cyan);
+}
+.msg .msg-one{
+ color: var(--BrightYellow);
+}
+.msg .description{
+ color: var(--GrayishBlue);
+ line-height: 1.7;
+}
+.text-one{
+ margin: 5%;
+}
+
+
+.subscription{
+ background-color: var(--Cyan);
+ color: var(--LightGray);
+}
+.subscription p{
+ color: var(--GrayishBlue);
+}
+.subscription span{
+ margin-right: 2%;
+ font-size: 2rem;
+ color: var(--LightGray);
+}
+.subscription h3{
+ font-weight: 400;
+ font-size: 1rem;
+}
+.text-two{
+ margin: 3%;
+}
+.btn{
+ background-color: var(--BrightYellow);
+ color: inherit;
+ font-size: 1rem;
+ font-weight: 700;
+ width: 100%;
+ height: 50px;
+ border: none;
+ outline: none;
+ border-radius: 8px;
+ margin-top: 1rem;
+ margin-bottom: 8px;
+ cursor: pointer;
+ box-shadow: -1px 4px 8px rgb(0,0,0,0.5);
+}
+.btn:hover{
+  box-shadow: -1px 4px 14px rgb(0,0,0,0.6);
+}
+
+
+.why-us{
+ background-color: hsl(179, 62%, 47%);
+ color: white;
+}
+.features{
+ margin-top: 3%;
+ line-height: 1.4;
+}
+
+/* for tablets */
+@media only screen and (min-width: 650px) and (max-width: 999px) {
+ html{
+  font-size: 20px;
+ }
+ main{
+  max-width: 70%;
+  margin: 7% auto;
+ }
+ section{
+  padding: 8%;
+ }
+}
+
+/* for desktops */
+@media only screen and (min-width: 1000px){
+ main{
+  max-width: 50%;
+  margin: 3% auto;
+ }
+ .subscription{
+  width: 40%;
+  height: 15rem;
+  float: left;
+ }
+ .why-us{
+  width: 40%;
+  height: 15rem;
+  float: right;
+ }
+ .features{
+  margin-top: 9%;
+ }
+}
